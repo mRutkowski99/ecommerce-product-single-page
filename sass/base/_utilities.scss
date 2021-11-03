@@ -1,0 +1,42 @@
+.margin-btm-xsm {
+  margin-bottom: 1rem;
+}
+
+.margin-btm-sm {
+  margin-bottom: 2.5rem;
+}
+
+.margin-block-sm {
+  margin: 1.5rem 0;
+}
+
+.border-radius-md {
+  border-radius: 2rem;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.btn-shadow {
+  box-shadow: 0 2rem 4rem rgba($color-primary, 0.5);
+
+  &:active {
+    box-shadow: 0 1rem 3rem rgba($color-primary, 0.5);
+  }
+}
+
+.show-nav {
+  left: 0 !important;
+  background-color: rgba($color-black, 0.75) !important;
+}
+
+.cart-position {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  width: calc(100% - 2rem);
+  max-width: 40rem;
+  transform: translateY(calc(100% + 1rem));
+  z-index: 1;
+}

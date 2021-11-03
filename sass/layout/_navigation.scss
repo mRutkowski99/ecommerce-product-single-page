@@ -1,0 +1,89 @@
+.nav {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: -100%;
+  background-color: transparent;
+  z-index: 2;
+  transition: left 0.4s ease-out, background-color 0.4s ease-out 0.2s;
+
+  @media screen and (min-width: $bp-medium) {
+    position: relative;
+    width: unset;
+    height: unset;
+    top: auto;
+    left: auto;
+    margin-right: auto;
+    border: none;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    color: $color-grayish-blue-dark;
+    z-index: 1;
+
+    @media screen and (min-width: $bp-medium) {
+      display: none;
+    }
+  }
+
+  .nav-list {
+    list-style-type: none;
+    width: 20rem;
+    height: 100%;
+    background-color: $color-white;
+    padding: 5rem 0;
+    position: relative;
+
+    @media screen and (min-width: $bp-medium) {
+      width: unset;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__item {
+      padding: 1rem 2rem;
+      position: relative;
+
+      @media screen and (min-width: $bp-medium) {
+        padding: 1rem 1.5rem 4rem;
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: $color-black;
+      font-weight: 700;
+      transition: all 0.3s ease-out;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        height: 3px;
+        width: 0;
+        transform: translateX(-50%);
+        background-color: $color-primary;
+        transition: all 0.3s ease-out;
+      }
+
+      &:hover {
+        color: $color-black;
+      }
+
+      &:hover::after {
+        width: 100%;
+      }
+
+      @media screen and (min-width: $bp-medium) {
+        font-weight: 400;
+        color: $color-grayish-blue-dark;
+      }
+    }
+  }
+}

@@ -1,0 +1,21 @@
+.add-to-cart {
+  background-color: $color-grayish-blue-light;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__icon {
+    color: $color-primary;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  &__quantity {
+    color: $color-black;
+    font-weight: 700;
+  }
+}
