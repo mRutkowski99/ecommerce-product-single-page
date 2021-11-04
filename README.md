@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- Live URL: [Add live site URL here](https://mrutkowski99.github.io/ecommerce-product-single-page/)
+- Live URL: [View live](https://mrutkowski99.github.io/ecommerce-product-single-page/)
 
 ## My process
 
